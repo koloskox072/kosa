@@ -70,6 +70,8 @@
             lbl5.Text = list[count].publicationYear;
             lbl6.Text = list[count].pages.ToString();
             lbl7.Text = list[count].publisher;
+            //ezz
+
         }
     }
 }
