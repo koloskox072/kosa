@@ -49,8 +49,27 @@
         }
         public void Next(object sender, EventArgs e)
         {
-            lbl1.Text = list[count].title;
             count++;
+            if(count == list.Count) count = 0;
+            lbl1.Text = list[count].id.ToString();
+            lbl2.Text = list[count].title;
+            lbl3.Text = list[count].author;
+            lbl4.Text = list[count].genre;
+            lbl5.Text = list[count].publicationYear;
+            lbl6.Text = list[count].pages.ToString();
+            lbl7.Text = list[count].publisher;
+        }
+        public void Prev(object sender, EventArgs e)
+        {
+            count--;
+            if (count == -1) count = list.Count-1;
+            lbl1.Text = list[count].id.ToString();
+            lbl2.Text = list[count].title;
+            lbl3.Text = list[count].author;
+            lbl4.Text = list[count].genre;
+            lbl5.Text = list[count].publicationYear;
+            lbl6.Text = list[count].pages.ToString();
+            lbl7.Text = list[count].publisher;
         }
     }
 }

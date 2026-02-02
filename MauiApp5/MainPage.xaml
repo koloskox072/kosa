@@ -11,9 +11,38 @@
                 Text=""
                 x:Name="lbl1"
             />
+            <Label
+                Text=""
+                x:Name="lbl2"
+            />
+            <Label
+                Text=""
+                x:Name="lbl3"
+            />
+            <Label
+                Text=""
+                x:Name="lbl4"
+            />
+            <Label
+                Text=""
+                x:Name="lbl5"
+            />
+            <Label
+                Text=""
+                x:Name="lbl6"
+            />
+            <Label
+                Text=""
+                x:Name="lbl7"
+            />
+
             <Button
                 Text="next"
                 Clicked="Next"
+            />
+            <Button
+                Text="prev"
+                Clicked="Prev"
             />
         </VerticalStackLayout>
     </ScrollView>
